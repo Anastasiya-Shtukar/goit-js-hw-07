@@ -16,9 +16,8 @@ buttonCreate.addEventListener("click", () => {
     for (let index = 1; index <= input.value; index++) {
       const boxesCreate = document.createElement("div");
       boxes.append(boxesCreate);
-      let x = 20;
-      let sizeBox = x + 10;
-
+      let x = 2;
+      let sizeBox = (x + index) * 10;
       boxesCreate.style.width = `${sizeBox}px`;
       boxesCreate.style.height = `${sizeBox}px`;
       boxesCreate.style.backgroundColor = getRandomHexColor();
