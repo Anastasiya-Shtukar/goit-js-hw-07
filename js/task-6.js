@@ -12,7 +12,7 @@ const boxes = document.querySelector("#boxes");
 
 buttonCreate.addEventListener("click", () => {
   boxes.innerHTML = "";
-  if (input.value > 1 && input.value < 100) {
+  if (input.value >= 1 && input.value <= 100) {
     for (let index = 1; index <= input.value; index++) {
       const boxesCreate = document.createElement("div");
       boxes.append(boxesCreate);
